@@ -29,4 +29,7 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
 /* New function to create a binary tree node */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
+/*a function that deletes an entire binary tree*/
+void binary_tree_delete(binary_tree_t *tree);
+
 #endif /* BINARY_TREES_H */
