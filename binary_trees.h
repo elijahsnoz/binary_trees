@@ -44,4 +44,6 @@ void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
 /*  Function that goes through a binary tree using inorder traversal*/
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
 
+/*function that counts the nodes with at least 1 child in a binary tree*/
+size_t binary_tree_nodes(const binary_tree_t *tree);
 #endif /* BINARY_TREES_H */
