@@ -35,6 +35,8 @@ binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
 int binary_tree_is_bst(const binary_tree_t *tree);
 binary_tree_t *bst_insert(bst_t **tree, int value); // Function prototype for bst_insert
 
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);
+
 /* New function to insert a node as the left-child of another node */
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
 
