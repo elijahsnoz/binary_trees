@@ -103,4 +103,7 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 
+/*101*/
+void binary_tree_level(const binary_tree_t *tree, void (*func)(int), size_t level);
+
 #endif /* BINARY_TREES_H */
