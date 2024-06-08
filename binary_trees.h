@@ -33,6 +33,9 @@ int binary_tree_is_bst(const binary_tree_t *tree);
 binary_tree_t *bst_insert(bst_t **tree, int value); /*Function prototype for bst_insert*/ 
 bst_t *array_to_bst(int *array, size_t size);
 
+/* Searches for a value in a binary search tree*/
+bst_t *bst_search(const bst_t *tree, int value)
+
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);
 
 /* New function to insert a node as the left-child of another node */
