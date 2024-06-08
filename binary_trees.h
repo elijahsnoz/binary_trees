@@ -16,13 +16,9 @@ typedef struct binary_tree_s
 } binary_tree_t;
 
 /* Structure for Binary Search Tree node */
-typedef struct binary_search_tree_s
-{
-    int n; /* Node value */
-    struct binary_search_tree_s *parent; /* Pointer to the parent node */
-    struct binary_search_tree_s *left; /* Pointer to the left child node */
-    struct binary_search_tree_s *right; /* Pointer to the right child node */
-} bst_t;
+
+typedef struct binary_tree_s bst_t;
+
 
 /* Function Prototypes */
 /* Provided function to print binary tree */
@@ -33,7 +29,7 @@ int binary_tree_is_complete(const binary_tree_t *tree);
 binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
 binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
 int binary_tree_is_bst(const binary_tree_t *tree);
-binary_tree_t *bst_insert(bst_t **tree, int value); // Function prototype for bst_insert
+binary_tree_t *bst_insert(bst_t **tree, int value); /*Function prototype for bst_insert*/ 
 
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);
 
@@ -81,5 +77,6 @@ size_t binary_tree_height(const binary_tree_t *tree);
 
 /*function that measures the balance factor of a binary tree*/
 int binary_tree_balance(const binary_tree_t *tree);
+
 
 #endif /* BINARY_TREES_H */
