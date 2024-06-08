@@ -18,6 +18,7 @@ typedef struct binary_tree_s
 /* Structure for Binary Search Tree node */
 
 typedef struct binary_tree_s bst_t;
+typedef struct binary_tree_s avl_t; /*AVL Tree*/
 
 
 /* Function Prototypes */
@@ -40,6 +41,12 @@ bst_t *inorder_successor(bst_t *root);
 bst_t *bst_delete(bst_t *root, bst_t *node);
 bst_t *bst_remove_recursive(bst_t *root, bst_t *node, int value);
 bst_t *bst_remove(bst_t *root, int value);
+
+/* function that checks if a binary tree is a valid AVL Tree*/
+int binary_tree_is_avl(const binary_tree_t *tree);
+size_t height(const binary_tree_t *tree);
+int is_avl_helper(const binary_tree_t *tree, int lo, int hi);
+int binary_tree_is_avl(const binary_tree_t *tree);
 
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);
 
