@@ -44,9 +44,8 @@ bst_t *bst_remove(bst_t *root, int value);
 
 /* function that checks if a binary tree is a valid AVL Tree*/
 int binary_tree_is_avl(const binary_tree_t *tree);
-size_t height(const binary_tree_t *tree);
-int is_avl_helper(const binary_tree_t *tree, int lo, int hi);
-int binary_tree_is_avl(const binary_tree_t *tree);
+size_t bst_height(const binary_tree_t *tree);
+int is_avl_assis(const binary_tree_t *tree, int lo, int hi);
 
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);
 
