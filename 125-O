@@ -1,0 +1,3 @@
+echo "Inserting the value n: O(log n)" > 125-O
+echo "Removing the node with the value n: O(log n)" >> 125-O
+echo "Searching for a node in an AVL tree of size n: O(log n)" >> 125-O
